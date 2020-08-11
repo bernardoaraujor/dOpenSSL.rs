@@ -3,8 +3,8 @@ use cmake::Config;
 
 fn main()
 {
-    let dst = Config::new("cmake").build();       
-
+    let dst = Config::new("cmake")
+                     .cflag("-DCMAKE_INSTALL_PREFIX=$PWD/ext_install")
+                     .build();
     println!("cargo:rustc-link-search=native={}", dst.display());
-    //println!("cargo:rustc-link-lib=static=foo");    
 }

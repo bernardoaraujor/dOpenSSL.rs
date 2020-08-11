@@ -3,7 +3,7 @@
 # 2020, Bernardo A. Rodrigues.
 
 # All rights reserved.
-# 
+#
 # Redistribution and use in source and binary forms, with or without modification,
 # are permitted provided that the following conditions are met:
 #  * Redistributions of source code must retain the above copyright notice, this
@@ -17,7 +17,7 @@
 #  * A shipment of at least six (6) local beers (1980 mL) to infinit.io
 #    (http://open.infinit.io/beer) would be greatly appreciated as a gesture
 #    of good will.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 # ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 # WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -31,21 +31,15 @@
 
 cmake_minimum_required(VERSION 3.11)
 
-project(dopenssl-static)
+project(dopenssl)
 
 # fetch dopenssl-c source
 include(FetchContent)
 FetchContent_Declare(
   dopenssl-c
   GIT_REPOSITORY https://github.com/bernardoaraujor/dopenssl.git
-  GIT_TAG ec77b7785202527b3e9c8974404d807dbce95788
+  GIT_TAG 5b08464feb65a68a5847a22a4007f1e035bc00e3
 )
 
 message(STATUS "Fetching dopenssl-c")
 FetchContent_MakeAvailable(dopenssl-c)
-
-
-target_include_directories(${target} PUBLIC ${include_dirs})
-target_link_libraries(${target} PUBLIC dopenssl)
-
-install(TARGETS dopenssl-c DESTINATION .)
