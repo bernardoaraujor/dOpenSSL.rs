@@ -41,7 +41,7 @@ The RSA seed is used to create the RSA private key, from which the public key is
 
 The bytesize of `rsa_seed` is given by the formula: `rsa_seed_len = rsa_bits / 8`. That means that `rsa_seed` is directly proportional to how many bits we choose for the RSA keypair.
 
-2048-bit RSA is ([recommended by NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57Pt3r1.pdf)), so it's the only option we support.
+2048-bit RSA is ([recommended by NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57Pt3r1.pdf)), so `rsa_bits = 2048` is the only value IOTA2RSA supports.
 
 ### IOTA to RSA seed derivation
 
