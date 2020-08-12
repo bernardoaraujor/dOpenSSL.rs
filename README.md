@@ -80,7 +80,7 @@ $ cargo build
 ```
 
 ## Example
-The following source code can be found in `src/sample.c`.
+The following source code can be found in `src/sample.c` of http://github.com/bernardoaraujor/dopenssl.
 
 It shows how dOpenSSL can be used to generate cryptographic keys (in this case 2048-bit RSA keys) in a deterministic way from an IOTA Seed.
 
