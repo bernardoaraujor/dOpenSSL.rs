@@ -38,7 +38,7 @@ include(FetchContent)
 FetchContent_Declare(
   dopenssl-c
   GIT_REPOSITORY https://github.com/bernardoaraujor/dopenssl.git
-  GIT_TAG 5b08464feb65a68a5847a22a4007f1e035bc00e3
+  GIT_TAG d3aa8bf5387420a96d9d3bec2b12f8a618f42845
 )
 
 message(STATUS "Fetching dopenssl-c")
