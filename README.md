@@ -77,7 +77,6 @@ Assuming you're on Ubuntu 18.04:
 $ git clone http://github.com/bernardoaraujor/dopenssl.rs
 $ cd dopenssl.rs
 $ cargo build
-$ cargo install
 ```
 
 ## Example
